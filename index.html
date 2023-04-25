@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin:20px auto; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="center-alignment flex">
+
+  <div class="container flex">
+    <div class="styled-form flex">
+      <div class="form-input-wrapper">
+        <label for="day" class="error-label-day">DAY</label>
+        <input type="number" name="day"  id="day" placeholder="DD" >
+        <p class=" error day-error"></p>
+      </div>
+      <div class="form-input-wrapper">
+        <label for="month" class="error-label-month">MONTH</label>
+        <input type="number" name="month"  id="month" placeholder="MM">
+        <p class=" error month-error"></p>
+      </div>
+      <div class="form-input-wrapper">
+        <label for="year" class="error-label-year">YEAR</label>
+        <input type="number" name="year"  id="year" placeholder="YYYY">
+        <p class=" error year-error"></p>
+      </div>
+    </div>
+    
+    <div class="btn" id="btn">
+      <!-- <img src="/assets/images/icon-arrow.svg" alt="btn"> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+    </div>
+
+    <div class="result-div">
+      <h1><span class="year-result">- -</span>years</h1>
+      <h1><span class="month-result">- -</span>months</h1>
+      <h1><span class="day-result">- -</span>days</h1>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/MukulBairwa-101" target="_blank"> Mukul Kumar Bairwa </a>.
+  </div>
+</body>
+
+
+<script src="./index.js"></script>
+</html>
